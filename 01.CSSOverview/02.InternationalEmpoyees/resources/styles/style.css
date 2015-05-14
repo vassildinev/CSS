@@ -1,0 +1,41 @@
+body {
+	font-size: 13px;
+}
+
+table {
+	font-family: Calibri;
+	font-size: 1em;
+	border-collapse: collapse;
+}
+
+#head-row {
+	background-color: #55BB22;
+	color: #FEFEFE;
+}
+
+table, th {
+	font-weight: normal;
+	border: 1px solid #999999;
+}
+
+th, td {
+	height: 20px;
+}
+
+td {
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+}
+
+th {
+	width: 130px;
+	text-align: left;
+}
+
+tr:nth-of-type(2n) {
+	background-color: #EEEEEE;
+}
+
+#promo {
+	width: 80px;
+}

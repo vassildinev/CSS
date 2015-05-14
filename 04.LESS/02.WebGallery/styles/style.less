@@ -1,0 +1,40 @@
+.images-container {
+	& > img {
+		float: left;
+		width: 250px;
+		height: 160px;
+		
+		margin: 10px;
+	}
+	
+	.preview-container {
+		transition: all 0s 9999s;
+		visibility: hidden;
+		position: absolute;
+		bottom: 5px;
+		left: 30%;
+		img {
+			width: 400px;
+			height: 256px;
+		}
+	}
+	
+	&:active > .preview-container {
+		transition: all 0s;
+		visibility: visible;
+	}
+}
+
+.clearfix {
+	zoom:1;
+	&:after {
+	   content: " ";
+	   visibility: hidden;
+	   display: block;
+	   height: 0;
+	   clear: both;
+	}
+}
+
+
+

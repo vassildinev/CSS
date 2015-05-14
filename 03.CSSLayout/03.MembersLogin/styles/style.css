@@ -1,0 +1,83 @@
+body {
+	background: #565656;
+}
+
+section#log-in {
+	width: 100%;
+	margin: 0;
+	height: 90px;
+	-webkit-box-shadow: inset 0px -12px 30px -10px rgba(150, 150, 150, 0.66);
+	-moz-box-shadow:   inset 0px -12px 30px -10px rgba(150, 150, 150, 0.66);
+	box-shadow:     inset 0px -12px 30px -10px rgba(150, 150, 150, 0.66);
+}
+
+img#logo {
+	width: 60px;
+	float: left;
+}
+
+section#log-in p {
+	margin: 0;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+	font-family: Times New Roman;
+	font-weight: 600;
+	font-size: 28px;
+	color: #fff;
+}
+
+section#log-in input {
+	height: 20px;
+	margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+}
+
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
+input[type="submit"] {
+	margin-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 23px;
+	width: 70px;
+	background: #c22;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+}
+
+h1#main-heading {
+	font-weight: 500;
+	font-size: 38px;
+	color: #fcd61d;
+}
+
+section p {
+	color: #a1a1a1;
+}
+
+section p span {
+	color:#fff;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}

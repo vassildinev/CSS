@@ -1,0 +1,101 @@
+body {
+  font-size: 14px;
+  font-family: 'Times New Roman';
+}
+
+
+#root {
+  width: 700px;
+}
+
+#previewer, #root, body, html {
+	margin: 0;
+	padding: 0;
+}
+
+#large h1 {
+	text-align: center;
+}
+
+#large {
+	border: 2px solid #999;
+	margin: 3px;
+	margin-right: 0;
+	width: 490px;
+	height: 393px;
+	float: left;
+}
+
+#large img {
+	margin: 1px 15px;
+	border: 2px solid #999;
+	border-radius: 5px;
+}
+
+.title {
+	font-size: 21px;
+	text-align: center;
+	display: block;
+	margin: 5px;
+}
+
+#list {
+	border: 2px solid #999;
+	float: right;
+	width: 199px;
+	height: 395px;
+	position: relative;
+	left: 0px;
+	margin: 3px 0;
+}
+
+button {
+	height: 50px;
+	width: 96px;
+	position: relative;
+	left: 1px;
+	color: #000;
+	border-radius: 5px;
+	border: 2px solid #999;
+	background: #ccc;
+}
+
+ul {
+	list-style-type: none;
+	padding: 7px;
+	margin: 0;
+	overflow: auto;
+	height: 285px;
+}
+
+ul li {
+	padding-top: 6px;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	left: 0px;
+	border-bottom: 2px solid #999;
+	width: 170px;
+	height: 102px;
+}
+
+li img {
+	margin: 7px 0;
+}
+
+.current {
+	background: #ccc;
+	padding: 0;
+	padding-top: 5px;
+	height: 80px;
+}
+
+.current img {
+	margin: 11px; 
+	height: 43px;
+	width: 65px;
+}
+
+ul li:nth-child(4) {
+	height: 110px;
+}

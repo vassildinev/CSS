@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+
+body {
+	font-size: 20px;
+}
+
+#main-content {
+	font-family: Consolas;
+	color: #0094ff;
+}
+
+#main-content:first-line {
+	font-weight: bold;
+}
+
+#main-content:first-letter {
+	font-family: 'Rouge Script', cursive;
+	font-size: 2em;
+}

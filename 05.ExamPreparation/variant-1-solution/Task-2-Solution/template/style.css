@@ -1,0 +1,74 @@
+ul {
+	list-style-type: none;
+}
+
+div#wrapper {
+	width: 950px;
+}
+
+html {
+	font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+	font-size: 16px;
+}
+
+div.content {
+	display: none;
+}
+
+ul > li {
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 5px;
+	margin-right: -5px;
+	padding: 11px 21px;
+	position: relative;
+	top: -15px;
+	left: -45px;
+	text-align: center;
+	vertical-align: top;
+
+	background: rgb(37,220,242);
+	background: -moz-linear-gradient(top,  rgba(37,220,242,1) 0%, rgba(121,149,226,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(37,220,242,1)), color-stop(100%,rgba(121,149,226,1)));
+	background: -webkit-linear-gradient(top,  rgba(37,220,242,1) 0%,rgba(121,149,226,1) 100%);
+	background: -o-linear-gradient(top,  rgba(37,220,242,1) 0%,rgba(121,149,226,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(37,220,242,1) 0%,rgba(121,149,226,1) 100%);
+	background: linear-gradient(to bottom,  rgba(37,220,242,1) 0%,rgba(121,149,226,1) 100%);
+}
+
+ul > li a {
+	text-decoration: none;
+}
+
+ul.menu > li:first-child:hover {
+	width: 105px;
+	height: 25px;
+	font-size: 25px;
+}
+
+ul.menu > li:first-child:hover * {
+	font-size: 16px;
+	text-align: left;
+}
+
+.bold {
+	font-weight: 700px;
+	text-decoration: underline;
+}
+
+ul.menu > li div.content {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+ul.menu > li:first-child div.content {
+	width: 295px;
+	height: 65px;
+}
+
+ul > li:hover div.content {
+	display: block;
+	position: absolute;
+}

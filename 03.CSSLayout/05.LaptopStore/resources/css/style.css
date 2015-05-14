@@ -1,0 +1,70 @@
+*
+{
+	font-family: Calibri;
+}
+
+#laptop_page
+{
+	display: table;
+}
+
+img.laptop_img
+{
+	float: left;
+	display: inline;
+	width: 200px;
+	margin: 20px;
+}
+
+fieldset.individual_laptop_info_panel
+{
+	display: table-column;
+	border: 1px solid black;
+	float: left;
+	width: 33%;
+}
+
+p.individual_laptop_info
+{
+	margin: 20px;
+}
+
+fieldset
+{
+	display: inline-block;
+}
+
+legend
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav
+{
+	text-align: center;
+}
+
+a:link
+{
+	font-size: 30px;
+}
+
+#search_details
+{
+	margin: 50px;
+}
+
+fieldset.slider
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 80px;
+	width: 15%;
+}
+
+label.details_label
+{
+	font-size: 20px;
+	font-weight: bold;
+}

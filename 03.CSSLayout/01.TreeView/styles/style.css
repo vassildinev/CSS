@@ -1,0 +1,27 @@
+ul#nav{
+	width:200px;
+	display:block;
+	color:#000;
+}
+
+ul#nav ul.sub-nav{
+	display:none;
+}
+
+ul#nav li.nav-item:hover > span {
+	text-decoration: underline;
+}
+
+ul#nav li.nav-item:hover > ul.sub-nav{
+	display:block;
+	position: relative;
+	left: -30px;
+}
+
+#nav, ul.sub-nav {
+	list-style-type: none;
+}
+
+ul.sub-nav {
+	color: #888;
+}

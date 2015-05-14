@@ -1,0 +1,61 @@
+body {
+	font-size: 12px;
+}
+
+table {
+	background-color: #555555;
+	font-family: Calibri;
+	font-size: 1em;
+
+}
+
+th, td {
+	height: 20px;
+	font-weight: normal;
+}
+
+td {
+	width: 200px;
+}
+
+th.key {
+	width: 100px;
+	font-style: italic;
+	color: #EEEEEE;
+}
+
+.vertical {
+	vertical-align: top;
+}
+
+.yellow {
+	color: palegoldenrod;
+}
+
+.orange {
+	color: orange;
+}
+
+.gray {
+	color: #AAAAAA;
+}
+
+#ticket-head {
+	color: #AAAAAA;
+	text-align: left;
+	font-size: 1.6em;
+}
+
+.key {
+	color: white;
+	text-align: left;
+	font-style: none;
+}
+
+#dot {
+	color: lightgreen;
+}
+
+#comment {
+	color: red;
+}

@@ -1,0 +1,37 @@
+body {
+  font-size: 18px;  
+  font-family: Arial
+}
+
+#root {
+  width: 610px;
+  /*delete me*/
+	border: 1px solid black;
+	padding: 0;
+}
+
+h1 {
+	color: #2AA0BD;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-style: italic;
+	letter-spacing: 0.05px;
+}
+
+.chat-container {
+	padding: 0;
+	background: rgb(74,232,113);
+	background: -moz-linear-gradient(top,  rgba(74,232,113,1) 0%, rgba(74,232,113,1) 45%, rgba(241,255,188,1) 75%, rgba(241,255,188,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(74,232,113,1)), color-stop(45%,rgba(74,232,113,1)), color-stop(75%,rgba(241,255,188,1)), color-stop(100%,rgba(241,255,188,1)));
+	background: -webkit-linear-gradient(top,  rgba(74,232,113,1) 0%,rgba(74,232,113,1) 45%,rgba(241,255,188,1) 75%,rgba(241,255,188,1) 100%);
+	background: -o-linear-gradient(top,  rgba(74,232,113,1) 0%,rgba(74,232,113,1) 45%,rgba(241,255,188,1) 75%,rgba(241,255,188,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(74,232,113,1) 0%,rgba(74,232,113,1) 45%,rgba(241,255,188,1) 75%,rgba(241,255,188,1) 100%);
+	background: linear-gradient(to bottom,  rgba(74,232,113,1) 0%,rgba(74,232,113,1) 45%,rgba(241,255,188,1) 75%,rgba(241,255,188,1) 100%);
+
+	display: inline-block;
+	width: 48%;
+	height: 600px;
+	margin: 0% 1%;
+	float: left;
+}

@@ -1,0 +1,32 @@
+body {
+	width: 1000px;
+}
+
+div {
+    border: 1px solid #f00;
+    border-radius: 90px;
+    background: #000;
+}
+
+#division2,
+#division5,
+#division8,
+#division11,
+#division14,
+#division17,
+#division20,
+#division23,
+#division26,
+#division29,
+#division32,
+#division35,
+#division38,
+#division41,
+#division44,
+#division47,
+#division50,
+#division53,
+#division56,
+#division59 {
+	padding-right: 40px;
+}

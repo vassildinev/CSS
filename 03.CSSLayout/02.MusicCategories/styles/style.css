@@ -1,0 +1,42 @@
+section {
+	border: 1px solid #444;
+	width: 400px;
+	margin: 15px;
+	position: relative;
+}
+
+p {
+	margin: 20px;
+}
+
+img {
+	float: left;
+	width: 150px;
+	height: 100px;
+	margin: 10px;
+}
+
+input[type="button"] {
+	position: relative;
+	bottom: 12px;
+	right: -65px;
+	height: 25px;
+	background: url(../images/btn-bg.png);
+	color: #fff;
+}
+
+input.listen {
+	width: 80px;
+}
+
+input.add {
+	width: 70px;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}

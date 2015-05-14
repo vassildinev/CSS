@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="resources/styles/style.css">		
+	</head>
+	<body>
+		<table id="calculator-container">
+			<tr>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"><img id="calculator-icon" src="resources/images/icon.png" alt="Calculator Icon"></td>
+				<th>Calculator</th>
+				<td class="calculator-border minimize"><input id="btn-minimize" type="button" value=""/></td>
+				<td class="calculator-border maximize"><input id="btn-maximize" type="button" value="" disabled/></td>
+				<td class="calculator-border close"><input id="btn-close" type="button" value=""/></td>
+				<td class="calculator-border"></td>
+			</tr>
+			<tr>
+				<td class="calculator-border"></td>
+				<td colspan="5" class="navigation">
+					<ul class="nav-list">
+						<li id="view">View</li>
+						<li id="edit">Edit</li>
+						<li id="help">Help</li>
+					</ul>
+				</td>
+				<td class="calculator-border"></td>
+			</tr>
+			<tr>
+				<td class="calculator-border"></td>
+				<td class="content-container" colspan="5">
+					<table id="calculator-content">
+						<tr>
+							<td class="content-wrapper"></td>
+							<td colspan="10" id="result-container"><input id="result" type="text" value="0"/></td>
+							<td class="content-wrapper"></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td colspan="10" id="binary-container">
+								<p id="binary-representation">
+									0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000<br/>
+									<span class="faded">63</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="faded">47</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="faded">32</span><br/>
+									0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000&nbsp;&nbsp;&nbsp;0000<br/>
+									<span class="faded">31</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="faded">47</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="faded">0</span>
+								</p>
+							</td>
+							<td class="content-wrapper"></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td class="options" rowspan="3" colspan="2">
+								<input id="hex" name="numeric-system" type="radio"/><label for="hex">Hex</label><br/>
+								<input id="dec" name="numeric-system" type="radio"/><label for="dec">Dec</label><br/>
+								<input id="oct" name="numeric-system" type="radio"/><label for="oct">Oct</label><br/>
+								<input id="bin" name="numeric-system" type="radio"/><label for="bin">Bin</label>
+							</td>
+							<td class="calculator-button"><input type="button" class="btn-operation" value="" disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="Mod"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation letter" value="A" disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation no-grad mem" value="MC"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation no-grad mem" value="MR"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation no-grad mem" value="MS"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation no-grad mem" value="M+"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation no-grad mem" value="M-"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="("></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value=")"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation letter" value="B" disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark bsp" value=""></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="CE"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="C"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="&plusmn;"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="&radic;" disabled></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="RoL"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="RoR"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation letter" value="C" disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="7"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="8"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="9"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="/"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation" value="%" disabled></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td class="options" rowspan="3" colspan="2">
+								<input id="qword" name="same-name" type="radio"/><label for="qword">Qword</label><br/>
+								<input id="dword" name="same-name" type="radio"/><label for="dword">Dword</label><br/>
+								<input id="word" name="same-name" type="radio"/><label for="word">Word</label><br/>
+								<input id="byte" name="same-name" type="radio"/><label for="byte">Byte</label>
+							</td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="Or"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="Xor"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation letter" value="D" disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="4"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="5"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="6"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="*"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation" value="1/x" disabled></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="Lsh"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="Rsh"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation letter" value="E" disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="1"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="2"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation number" value="3"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="-"></td>
+							<td rowspan="2" class="calculator-button"><input type="button" class="btn-operation equals" value=""></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="content-wrapper"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="Not"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="And"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation  letter" value="F" disabled></td>
+							<td colspan="2" class="calculator-button"><input type="button" class="btn-operation zero number" value="0"></td>
+							<td class="calculator-button"><input type="button" class="btn-operation" value="." disabled></td>
+							<td class="calculator-button"><input type="button" class="btn-operation dark" value="+"></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+				<td class="calculator-border"></td>
+			</tr>
+			<tr>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"></td>
+				<td class="calculator-border"></td>
+			</tr>
+		</table>
+	</body>
+</html>

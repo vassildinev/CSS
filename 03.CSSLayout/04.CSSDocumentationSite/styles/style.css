@@ -1,0 +1,129 @@
+body {
+	margin: 2px;
+	background: #f1f1f1;
+	font-family: Tahoma;
+	border: 1px solid #000;
+}
+
+nav, main, aside {
+	box-sizing: border-box;
+	float: left;
+	margin: 0.1%;
+}
+
+main, aside {
+	background: #fff;
+}
+
+main a, aside a {
+	color: #A23331;
+	font-size: 13px;
+}
+
+main section {
+	margin: 15px 5px;
+}
+
+nav {
+	padding-top: 10px;
+	width: 9.8%;
+	font-size: 13px;
+}
+
+nav img {
+	float: left;
+	margin-right: 5px;
+}
+
+nav>a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+
+nav ul {
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+nav section p {
+	margin: 0;
+	margin-top: 15px;
+	color: #971d1b;
+	font-weight: 700;
+}
+
+main {
+	width: 79.8%;
+	height: 650px;
+	border: 1px solid #aaa;
+}
+
+main img {
+	float:left;
+}
+
+main p#tutorial-heading {
+	clear: both;
+}
+
+main p.heading, aside p.heading {
+	background: #808080;
+	margin: 0;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.bold {
+	font-weight: 800;
+}
+
+.content {
+	font-size: 14px;
+}
+
+aside {
+	width: 9.8%;
+	text-align: center;
+}
+
+aside section {
+	border: 1px solid #808080;
+	margin: 0 0 5px 0;
+}
+
+aside img {
+	margin-left:13%;
+}
+
+aside input[type="text"] {
+	width: 90px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+hr {
+	background-color: #adadad;
+}
+
+main input[type="button"] {
+	background: #fff;
+	border: 1px solid #000;
+	width: 110px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: right; 
+}
